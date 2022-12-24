@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h3>Form tutorial</h3>
+    <form action="lakshay.php">
+        <label for="name">Name</label>
+
+        <div>
+            :<input type="text" name="name" id="name">
+        </div>
+        <br>
+        <div>
+            Age:<input type="text" name="age">
+        </div>
+        <br>
+        <div>
+            Gender:<input type="text" name="Gender">
+        </div>
+        <br>
+        <div>
+            Email:<input type="email" name="EmailID">
+        </div><br>
+        <div>
+            <input type="date" name="Date">
+        </div><br><br>
+        <div>
+            <input type="number" name="Mynumber">
+        </div><br><br>
+        <label for="Eligbile">Are you eligible?</label>
+        <div>
+            <input type="checkbox" name="Eligibilty" id="Eligbile">
+        </div><br><br>
+        <div>
+            Gender: Male<input type="radio" name="Gendercheck"> Female<input type="radio" name="Gendercheck">
+            Other<input type="radio" name="Gendercheck">
+        </div><br><br>
+        <div>
+            Write something about urself:<br><textarea name="textarea" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div><label for="mycar">Select your car</label>
+            <select name="Car" id="mycar">
+                <option value="Maruti">Maruti</option>
+                <option value="Toyota" selected>Toyota</option>
+            </select>
+
+
+
+
+        </div>
+
+
+
+
+        <div>
+            <input type="submit" value="Submit Form">
+        </div>
+        <div>
+            <input type="reset" value="Reset Form ">
+        </div>
+
+
+    </form>
+</body>
+
+</html>
