@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            border: solid black 5px;
+            background-color: orange;
+            width: 1000px;
+            height: 900px;
+            margin: auto;
+
+        }
+        .brand{
+            border: solid red 2px;
+            margin: 32px;
+            padding: 20px;
+            background-color: yellow;
+            border-radius: 20px;
+            width: 300px;
+        }
+        #iphone{
+            float: left;
+            width: 38%;
+        }
+        #Samsung{
+            float: right;
+            width: 38%;
+        }
+        #Xiaomi,#Vivo{
+            clear: both;
+            width: auto;
+            height: 200px;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the store</h1>
+        <div class="brand" id="iphone">
+            <h2>Iphone</h2>
+            <p id="aboutiphone">
+                This is paragraph about iphone. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi eum rerum exercitationem tempora molestiae! Repellat eius fugit consequatur unde, dolore non harum?
+            </p>
+        </div>
+        <div class="brand" id="Samsung">
+            <h2>Samsung</h2>
+            <p id="aboutSamsung">
+                This is paragraph about Samsung. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi eum rerum exercitationem tempora molestiae! Repellat eius fugit consequatur unde, dolore non harum?
+            </p>
+        </div>
+        <div class="brand" id="Xiaomi">
+            <h2>Xiaomi</h2>
+            <p id="aboutXiaomi">
+                This is paragraph about Xiaomi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi eum rerum exercitationem tempora molestiae! Repellat eius fugit consequatur unde, dolore non harum?
+            </p>
+        </div>
+        <div class="brand" id="Vivo">
+            <h2>Vivo</h2>
+            <p id="aboutvivo">
+                This is paragraph about Vivo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi eum rerum exercitationem tempora molestiae! Repellat eius fugit consequatur unde, dolore non harum?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
