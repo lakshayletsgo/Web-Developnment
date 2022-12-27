@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <style>
+        .container{
+            border: solid red 2px;
+            height: 1000px;
+            
+        }
+        .box{
+            display: inline-block;
+            border: solid black 1px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        #box2{
+            /* position: absolute; */
+            /* position: relative;
+            top: 21px;
+            left: 30px; */
+            /* fixed position me voh box vahi fix ho jayega screen pe tu kahi marzi scroll kare */
+            /* position: fixed;
+            top: 10px;
+            right: 20px; */
+
+            /* position sticky karne par voh uske aane ke baad vahi ke vahi chipka reh jayega  */
+            position: sticky;
+            top: 20px;
+            /* left: 40px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">First</div>
+        <div class="box" id="box2">Second</div>
+        <div class="box" id="box3">Third</div>
+        <div class="box" id="box4">Fourth</div>
+    </div>
+</body>
+</html>
