@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Navigation</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+            background-color: rgb(28, 27, 27);
+            /* border: solid 6px black; */
+            border-radius: 37px;
+        }
+        .container ul{
+            overflow: auto;
+        }
+        .container li{
+            float: left;
+            /* padding: 10px; */
+            list-style: none;
+            margin: 14px 18px
+        }
+        .container li a{
+             padding: 14px 15px; 
+            color: white;
+            text-decoration: none;
+        }
+        .container li a:hover{
+            color: yellow;
+        }
+        .searchbar{
+            float: right;
+            /* border: white; */
+            margin: 10px;
+            
+            padding: 2px 63px
+            /* border-radius: 20px; */
+        }
+        .searchbar input{
+
+
+            border-radius: 36px;
+            border: solid ;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <ul>
+            <li><a href="https://www.youtube.com" target="_blank">Home</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">Links</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">Services</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">About Us</a></li>
+            <div class="searchbar">
+                <input type="text" name="searchbar" id="searchbar" placeholder="  Search Here">
+            </div>
+        </ul>
+    </nav>
+</body>
+</html>
