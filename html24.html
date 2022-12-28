@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilty and Z-index</title>
+    <style>
+        .box{
+            width: 190px;
+            height: 190px;
+            border: solid black 2px;
+        }
+        #box1{ background-color: rebeccapurple;
+        
+                position: relative; top: 49px;
+                z-index: 10;
+        
+        }
+        #box2{  
+                background-color: aqua;
+                z-index: 100;
+                /* In visibility hidden the space is reserved to the element while in display the space is not given to hidden element it is like removed from the site  */
+                /* visibility: hidden;  */
+
+                /* display: none; */
+                /* z index will not work without applying the position property. Because it doesnot work in static position */
+                /* Greater the z index voh wala upar hoga */
+                position:relative; top: 10px;
+    
+        }
+        #box3{background-color: lime;}
+        #box4{background-color: red;}
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
