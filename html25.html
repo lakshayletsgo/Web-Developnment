@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: solid black 1px;
+            height: 600px;
+            width: 100%;
+            display: flex;
+            /* flex-direction: column;
+            flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* Isse yeh hoga mobile aur laptop sites ek me hi bana skta hai. Dono ka display alag alag hota toh usko karne ke liye */
+            /* flex-wrap: wrap; */
+            /* Isse dono ek me hi aa jata hai */
+            flex-flow: row wrap;
+            /* Isse saara content centre ke rehta hai */
+            justify-content: center;
+            /* Isse boxes ke beech space even aa jata hai  */
+            justify-content: space-between;
+            /* Isse boxes aur jo container ke sides ke beech me bhi space even ho jayega */
+            justify-content: space-evenly;
+            /* isse box ke dono side space equal hoga. Iska matlab do box ke beech space jada hoyega  */
+            /* justify-content: space-around; */
+            /* Isse saare items center me align ho jayege */
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            /* Isse saare items mobile view me equally align ho jayege */
+            align-items: stretch;
+        }
+
+        .item {
+            border: solid red 2px;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        #item1 {
+            order: 3;
+            /* higher the flex grow value utna jaldi voh strech hoga jab ham screen ko chotta bada karege */
+            /* flex-grow: 30;
+            flex-shrink: 10; */
+        }
+
+        #item2 {
+            /* Higher the order later will it come in the view */
+            /* order: 31;
+            flex-grow: 20; */
+
+            /* same to same agr flex shrink ki value jitni jada utni jaldi voh shrink hoga */
+            /* flex-shrink: 12; */
+            flex-basis: 300px;
+            /* agr flex direction column hai toh flex basis iski height control karega */
+            /* agr flex direction row hai toh flex basis iski width control karega */
+
+        }
+
+        #item3 {
+            /* order: 30; */
+            /* Isme pehla 2 flex grow ko represent kar rha hai second 2 flex shrink ko third wala flex basis aur yeh apas me cancel nahi hoge  */
+            flex: 2 2 200px;
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is Flexbox</h2>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item4">Fifth Box</div>
+        <div class="item" id="item4">Sixth Box</div>
+    </div>
+</body>
+
+</html>
