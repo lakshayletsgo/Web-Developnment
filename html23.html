@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making my first web site</title>
+    <!-- <link rel="stylesheet" href="css23.css"> -->
+    <style>
+        /* CSS Reset */
+        body{
+            padding: 0px;
+            margin: 0px;
+            background: url('https://media.istockphoto.com/id/1287504319/photo/fitness-equipment-on-the-floor-at-the-gym.jpg?s=612x612&w=0&k=20&c=YdX22jy89A_E5Id-GvlRbcgIZIiSlIJpN2u0NTgTdDc=');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1000px;
+            /* height: 4000px;
+            width: 3000px; */
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .left{
+            /* border: solid red 2px; */
+            /* float: left; */
+            display: inline-block;
+            position:absolute;
+            left: 20px;
+            top: 25px;
+            text-align: center;
+            font-size: 21px;
+
+        }
+        .left img{
+            width: 100px;
+        }
+        .mid{
+            display: block;
+            margin:  25px auto;
+            width: 37%;
+            /* border: solid red 2px; */
+        }
+        .right{
+            /* float: right; */
+            display: inline-block;
+            position:absolute;
+            right: 20px;
+            top: 25px;
+
+            /* border: solid red 2px; */
+        }
+        .right button:hover{
+            cursor: pointer;
+
+        }
+        .right button{
+            border: solid white 2px;
+            padding: 6px 16px;
+            border-radius: 20px ;
+
+        }
+        .navbar{
+            display: block;
+        }
+        .navbar li {
+            display: inline-block;
+            font-size: 23px;
+            /* margin: 4px 30px; */
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: wheat;
+            padding: 34px 17px;
+            /* margin: 10px -24px */
+        }
+        .navbar li a:hover, .navbar li a:active{
+            text-decoration: underline;
+            color: aqua;
+            cursor: pointer;
+        }
+        
+    .btn{
+        margin: 7px 20px;
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+    .btn:hover{
+        background-color: grey;
+        color: black;
+    }
+    .container{
+        border: solid white 2px;
+        margin: 162px 110px;
+    width: 33%;
+    padding: 75px;
+    border-radius: 40px;
+    }
+    .formgrp {
+        margin: 10px 10px;
+        padding: 10px;
+    }
+    .formgrp input {
+        border-radius: 30px;
+        border: solid;
+        width: 400px;
+        padding: 6px;
+        margin: 8px auto;
+        text-align: center;
+        display: block;
+        font-size: 19px;
+    }
+    .Submitbtn{
+        
+        margin: 10px 201px;
+        padding: 30px;
+    }
+    .Submitbtn button{
+
+        border: solid;
+        border-radius: 30px;
+        display: inline-block;
+        text-align: center;
+        width: 120px;
+        height: 35px;
+    }
+    .Submitbtn button:hover{
+        background-color: red;
+        color: rgb(154, 154, 145);
+        text-decoration: blanchedalmond;
+        cursor: pointer;
+    }
+    .mid{
+        position: sticky;
+        top: 0px;
+    }
+    h1{
+        display: block;
+        text-align: center;
+    }
+     
+    </style>
+</head>
+<body>
+    <div class="left">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSduY9FR9UZsNzye8JdcO3eIu_ZaU5u7S0Zb9Vv_7iT&s" alt="">
+        <div>Lakshay Fitness</div>
+    </div>
+    <div class="mid">
+            
+        <ul class="navbar">
+            <li><a href="https://www.google.com" target="_blank" >Name</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">Fitness Calculator </a></li>
+            <li><a href="https://www.instagram.com" target="_blank">About Us</a></li>
+            <li><a href="https://www.facebook.com" target="_blank">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="right">
+<button class="btn">More Info</button>
+<button class="btn">Services</button>
+    </div>
+    <div class="container">
+       <h1>Join the gym</h1>
+       <form action="noaction.php">
+        <div class="formgrp">
+            <input type="text" name="" placeholder="Enter Your Name">
+        </div>
+        <div class="formgrp">
+            <input type="text" name="" placeholder="Enter Your Age">
+        </div>
+        <div class="formgrp">
+            <input type="text" name="" placeholder="Enter Your Email ID">
+        </div>
+        <div class="formgrp">
+            <input type="text" name="" placeholder="Enter Your Mobile No.">
+        </div>
+        <div class="Submitbtn">
+            <button>Submit Now</button>
+        </div>
+       </form>
+    </div>
+</body>
+</html>
