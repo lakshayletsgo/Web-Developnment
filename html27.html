@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            font-size: 100px;
+            text-align: center;
+            background-color: orange;
+            display: none;
+        }
+        /* media query is like if else statement in which the statement should be true */
+        @media only screen and (max-width:300px){
+            #box1{
+                display: block;
+                background-color: black;
+                color: white;
+            }
+        }
+        @media only screen and (min-width:300px)  and (max-width:700px){
+            #box2{
+                display: block;
+                background-color: rgb(174, 55, 115);
+                color: white;
+            }
+        }
+        @media(min-width:700px)  and (max-width:1000px){
+            #box3{
+                background-color: rgb(107, 57, 199);
+                color: rgb(139, 163, 54);
+                display: block;
+            }
+        }
+        @media (min-width:1000px){
+            #box4{
+                display: block;
+                background-color: rgb(207, 28, 28);
+                color: rgb(42, 63, 7);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">This is box 1</div>
+    <div class="box" id="box2">This is box 2</div>
+    <div class="box" id="box3">This is box 3</div>
+    <div class="box" id="box4">This is box 4</div>
+    
+</body>
+</html>
