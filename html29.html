@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        input{
+            font-size: 20px;
+        }
+        input[type='text']{
+            padding: 30px;
+            border: black solid;
+
+        }
+         /* nth child is nothing but selector in which we put the tag we want to select then put the formula in the ()  */
+        li:nth-child(2){
+            background-color: yellow;
+        }
+        li:nth-child(2n+5){
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="formctrl">
+            <input type="text" placeholder="Enter your name">
+            <input type="text" placeholder="Enter your password">
+            <input type="text" placeholder="Enter your Age">
+            <input type="submit" placeholder="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item 1</li>
+            <li class="item" id="item2">Item 2</li>
+            <li class="item" id="item3">Item 3</li>
+            <li class="item" id="item4">Item 4</li>
+            <li class="item" id="item5">Item 5</li>
+            <li class="item" id="item6">Item 6</li>
+            <li class="item" id="item7">Item 7</li>
+            <li class="item" id="item8">Item 8</li>
+            <li class="item" id="item9">Item 9</li>
+            <li class="item" id="item10">Item 10</li>
+            <li class="item" id="item11">Item 11</li>
+            <li class="item" id="item12">Item 12</li>
+        </ul>
+    </div>
+</body>
+</html>
