@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        /* div ke andar jitne bhi p ho sab pe apply hoga chahey jitne andar ho  */
+        /* div p{
+            background-color: red;
+            color: yellow;
+        } */
+        /* div ke just andar hona chahiye  */
+        /* div>p{
+            background-color: orange;
+            color: blue;
+        } */
+        /* div ke agli class div ko nahi include karta */
+        div+p{
+            background-color: green;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is heading </h1>
+    <div class="main">
+        <ul><li><p>this is inside paragraph which is inside the li tag which is inside the div class.</p></li></ul>
+        <p>this is p inside div`</p>
+    </div>
+    <p>THis is paragraph outside the div class</p>
+</body>
+</html>
