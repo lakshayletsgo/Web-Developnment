@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container{
+            background-color: yellowgreen;
+        }
+        /* animation ke liye yeh teen cheeje important hoti hai 1. animation name  2. animation duration
+         3. animation-iteration-count */
+         /* uske baad uska name like ke keyframe likh de */
+        .box{
+            width: 250px;
+            height: 250px;
+            /* border: 2px solid red; */
+            background-color: yellow;
+            position: relative;
+            /* animation-name: lakshay1; */
+            animation-name: lakshay2;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-delay: 2s;
+            animation-fill-mode: forwards ;
+            animation-timing-function: ease-out;
+            /* animation-direction: reverse; */
+            /* we can the entire thing in one line by 
+                animation: name   duration   timing-function   delay   iteration-count   fill-mode */
+
+        }
+        @keyframes lakshay2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left:0px;
+            }
+            50%{
+                top: 250px;
+                left:250px;
+            }
+            75%{
+                top: 0px;
+                left:250px;
+            }
+            
+            100%{
+                top: 0px;
+                left:0px;
+            }
+
+        }
+        /* @keyframes lakshay1{
+            from{
+                width:190px
+            }
+            to{
+                width: 600px;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box.
+        </div>
+    </div>
+</body>
+</html>
