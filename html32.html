@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable/Custom Properties</title>
+    <style>
+        :root{
+
+            --primary-color: orange;
+            --secondary-color: black;
+            --maxw: 400px
+        }
+        /* variable is similar to the coding wala variable jisme agr ek cheej daal de toh usko baad me jitna marzi use kar skte hai  */
+        /* aur agr kuch varible har jagah use karna hau toh usko root me define kar denge */
+        .box{
+            width: 100px;
+            height: 200px;
+            background-color: var(--primary-color);
+            border: solid black;
+            margin: 2px 2px;
+        }
+        .container{
+            max-width: var(--maxw);
+            background-color: var(--secondary-color);
+            display: flex ;
+            margin: auto;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
