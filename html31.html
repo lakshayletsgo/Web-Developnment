@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+            
+        }
+        .card{
+            padding: 10px 10px;
+            margin: 30px 97px;
+            /* border: 2px solid red; */
+            /* isse box ka offset karke ek chotta sa radius bana dega positive value se neeche aur right side aayega aur negative value se upar aur left me aayega agr iske saath ek aur measurement likh de toh usse blur radius kahege jo jitna jada hoga utna blur radius ho jayega agr uske saath ek aur de de toh voh chaaro taraf spread ho jayega pehla offset x then offset y then blur radius then spread radius */
+            box-shadow: 10px 12px 10px green;
+            /* rgba me a is alpha jo brightness ko control karega */
+            box-shadow: 10px 10px 2px 3px rgba(1, 1, 1, 0.4);
+            background-color: crimson;
+            color: yellowgreen;
+        }
+        h2{
+            color: yellow;
+        }
+        /* text shadow is similar to the box bas isme text offset karr rhe hai  */
+        /* yeh waala helpful hoga jaha hame text ya box ko highlight karna hoga */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is card one  </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem, voluptas ad expedita laudantium rem esse sequi unde aut suscipit blanditiis, minima tenetur!</p></div>
+        <div class="card" id="card-2">
+            <h2>This is card two </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem, voluptas ad expedita laudantium rem esse sequi unde aut suscipit blanditiis, minima tenetur!</p></div>
+        <div class="card" id="card-3">
+            <h2>This is card Third </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem, voluptas ad expedita laudantium rem esse sequi unde aut suscipit blanditiis, minima tenetur!</p></div>
+        <div class="card" id="card-4">
+            <h2>This is card fourth </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem, voluptas ad expedita laudantium rem esse sequi unde aut suscipit blanditiis, minima tenetur!</p></div>
+    </div>
+</body>
+</html>
