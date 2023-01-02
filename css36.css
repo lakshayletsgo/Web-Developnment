@@ -1,0 +1,185 @@
+/* CSS Reset Properties */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+
+}
+.navbar{
+    display:flex;
+    position: absolute ;
+    top: 0px;
+    height: 73px;
+    /* flex-direction: column; */
+    /* position: absolute; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.navbar::before{
+    content: "";
+    
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.45;
+    z-index: -1;
+}
+#logo{
+    margin: 9px 10px;
+}
+
+#logo img{
+    margin: 1px 10px;
+    height: 53px;
+}
+.navbar ul{
+    display: flex;
+    
+}
+.navbar ul li{
+    list-style: none;
+    margin: 19px 29px;
+
+}
+.navbar ul li a{
+    padding: 10px 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    display: block;
+    border-radius: 19px;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+#home::before{
+    content: "";
+    
+    background: url("download1.jfif") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 760px;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+
+}
+ .h-primary{
+    font-size: 2.5rem ;
+    text-align: center;
+
+ }
+ .h-secondary{
+    font-size: 2.5rem ;
+    text-align: center;
+
+ }
+ #services{
+    margin: 34px;
+    display: flex;
+ }
+.box{
+    border: 2px solid rgb(220, 21, 21);
+    /* width: 100px; */
+    margin: 10px 10px;
+    border-radius: 30px;
+    background-color: rgb(188, 186, 183);
+    padding: 19px 72px;
+ }
+  .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+ }
+ .box img
+ #home p{
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+ }
+ .btn{
+    border: solid 2px black;
+    padding: 4px 19px;
+    background-color: white ;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 5px 5px;
+ }
+ .center{
+    text-align: center;
+ }
+#clients img{
+    
+    height: 100px;
+    margin: 10px 34px;
+}
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 177px;
+}
+#client-section{
+    position: relative;
+    height: 300px;
+}
+#client-section::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url("img6.jfif") no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url("img7.jfif") no-repeat center center/cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: 0.95;
+    z-index: -1;
+}
+footer{
+    color: white;
+    background-color: black;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px ;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.4rem
+}
