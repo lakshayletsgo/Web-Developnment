@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: 42px 42px 40px ; 
+            /* Isse grid rows me aa jayegi hamne 10 rows li hai aur grid template 3 ki di hai toh baaki ki yeh default jo hogi vo le lega aur isko change karne ke liye ham  */
+            grid-auto-rows: 50px;
+
+            grid-template-columns: 3fr 1fr 2fr;
+            /* Isse yeh poore ka 3 part first column ko de dega 1 part second ko aur 2 part third ko  */
+
+            grid-gap: 20px;
+        }
+        .box{
+            border: 2px solid red;
+            background-color: cadetblue;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <!-- <div class="box">This is box-10</div> -->
+    </div>
+</body>
+</html>
