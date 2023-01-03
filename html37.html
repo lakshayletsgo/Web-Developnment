@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 200px 100px 100px;
+            /* grid-template-columns: 200px auto 100px; */ 
+            /* Isse ^ beech wala saara space le lega */
+
+
+            /* grid-template-columns: 200px 100px auto; */
+            /* Isse ^ right most saari space le lega */
+            /* grid-template-columns: 1fr 3fr 3fr; */
+
+            grid-template-columns: repeat(8,auto);
+            /* Isse 8 column ban jayege jinki width same hogi */
+
+            grid-gap: 4rem;
+            /* isse gap aajayega grids ke beech  */
+
+        }
+        .item{
+            /* height: 200px; */
+            background-color: black;
+            color: white;
+            border: solid red 2px;
+            margin: 10px 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+    </div>
+</body>
+</html>
