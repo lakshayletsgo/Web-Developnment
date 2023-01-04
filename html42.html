@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries with CSS Grid</title>
+    <style>
+         .container{
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas: 
+            /* Isse voh poore row ko navbar se bhar denge ek tarah se fr kar dega */
+            'navbar navbar navbar navbar'
+            'section section aside aside'
+            'footer footer footer footer';
+        }
+        .example{
+            border: solid black 2px;
+            background-color: aliceblue;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+        @media only screen and (max-width:300px){
+            body{
+                background-color: yellow;
+            }
+        }
+        @media only screen and (min-width:300px)  and (max-width:700px){
+            body{
+                background-color: aqua;
+
+            }
+            .container{
+
+                grid-template-areas: 
+                /* Isse voh poore row ko navbar se bhar denge ek tarah se fr kar dega */
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+        }
+        @media(min-width:700px)  and (max-width:1000px){
+            body{
+                background-color: green;
+            }
+            .container{
+
+                    grid-template-areas: 
+                    /* Isse voh poore row ko navbar se bhar denge ek tarah se fr kar dega */
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    /* 'aside aside aside aside' */
+                    'footer footer footer footer';
+                    }
+                    #aside{
+                        display: none;
+                    }
+                                
+        }
+        @media (min-width:1000px){
+            body{
+                background-color: rgb(46, 32, 73);
+            }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="example" id="navbar">
+            Home Contact About
+        </nav>
+        <section class="example" id="section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi ad sequi dolores voluptatum aliquid nihil eum assumenda repudiandae necessitatibus.
+        </section>
+        <aside class="example" id="aside">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente beatae, in veniam cum, non sint aliquid alias nostrum quo saepe ut voluptatem tenetur quas minima, necessitatibus autem recusandae accusamus labore?
+        </aside>
+        <footer class="example">
+            Copyright &copy; Reserved
+        </footer>
+    </div>
+    
+</body>
+</html>
