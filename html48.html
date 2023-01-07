@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Object in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        let a ="alskahf";
+        let b = "adnaf";
+        let var1 = undefined;
+        let var2 = true;
+        let var3 = null;
+
+
+        // Isse ham kaafi saari cheeje ek me hi store kar skte hai 
+
+        // In this age,name, address is a key if we give space in the key we have to use it like this
+        let person={
+             age: 23,
+            name: "lakshay",
+            address: "Model Town",
+            "address 2": "Model Town",
+
+        }
+        console.log(person);
+
+        // And to call a particular element from it we use like this 
+        console.log(person.name);
+        console.log(person['address 2']);
+
+
+
+
+        // this is how u can create an array
+        let name =[1,70,23,"lakshay",undefined];
+        console.log(name);
+
+        // This how u can sort it 
+        console.log(name.sort());
+        
+        // This is how u can push an element to the array
+        name.push("The Greatest");
+        console.log(name.sort());
+
+    </script>
+</body>
+</html>
