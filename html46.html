@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+</head>
+<body>
+    <script>
+        var cr = 'Hello Lakshay';
+        // This Gives first Occurance 
+        var pos = cr.indexOf('o');
+        console.log(pos);
+        
+        // This Gives Last Occurance 
+        pos = cr.lastIndexOf('o');
+        console.log(pos);
+
+        // This slice the string in two parts from the index to the index we put 
+        var substr = cr.slice(2,9);
+        console.log(substr);
+
+        // This is same as slice but isme ham negative values use nahi kar skte but slice me kar skte hai 
+        var substr1 = cr.substring(4,9);
+        console.log(substr1);
+
+        var substr2 = cr.substr(4,10);
+
+
+        //str.replace can replace a string a string from a string but it didn't change the old string.It make a new string with same other string
+        
+        // var replacea = cr.replace('Lakshay','gg');
+        // console.log(replacea);
+        // console.log(cr);
+
+        // This can print an entire string to a lower case or upper case
+        console.log(cr.toLowerCase());
+        console.log(cr.toUpperCase());
+
+
+        // This is to concatinate(TO combine two strings) a string 
+        var newss = cr.concat("lakshay");
+        console.log(newss);
+
+
+        // This is to remove wide spaces at the front and end of strings
+        var newww = '   lkashadyv  aldda   ';
+        console.log(newww.trim());
+        console.log(newww);
+
+        var crrr = cr.charAt(12);
+        console.log(crrr);
+
+
+        // This tells the code of the character at the space
+        crrr = cr.charCodeAt(12);
+        console.log(crrr);
+    </script>
+</body>
+</html>
