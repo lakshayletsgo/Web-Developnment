@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript SetTieout and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Heading</h1>  
+        Time now is <span id="time"></span>  
+    </div>
+    <script>
+        console.log("Set timeout and clear timeout");
+        function greetings(name,byecall){
+            console.log("Hello"+ name+ byecall);
+        }
+        // setTimeout(greetings,10000," lakshay");    
+        // --> this Settimeout function in which function runs after the given time time is in miliseconds so 3000-->3 sec. We don't have to use parenthisis in the function call. Only name
+        
+
+
+        
+        // timeout = setTimeout(greetings,10000," lakshay");    
+        // console.log(timeout);
+        // timeout function helps us to terminate a settimeout call as it gives a id that we can use in clearTimeout function to clear the settimeout call
+
+
+        // setInterval(greetings,3000,"Lakshay","Also Good Night");
+        // We can add intervals of time with the help of setinterval function
+
+
+        function displaytime(){
+            let time= new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displaytime,1000);
+
+        // Isme hamne time ek variable leke uske andar date karke store kara di usske baad hamne getelementbyid karke, body ke andar hamne ek tag banaya jiski id hamne isme dedi uske andar ka material hamne time change karte rahe aur interval laga diya jisse time change hota rha 
+
+    </script>
+</body>
+</html>
