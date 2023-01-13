@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+    <style>
+        .container{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+        #timer{
+            width: 100%;
+            font-size: 2rem;
+            text-align: center;
+            border: solid 2px black;
+            background-color: yellow;
+            padding: 10px 10px;
+        }
+        #timer1{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat illum nemo pariatur harum quae autem possimus dicta fugit quidem, amet doloribus quos neque libero enim doloremque, natus, voluptatibus dolorem?</p> -->
+
+        <p id="timer">
+            Current time is <span id="timer1"></span>
+        </p>
+    </div>
+
+    <script>
+        console.log("Dates and Times in Js");
+        // let newd = new Date();
+        // let newd  = new Date("2098-10-20");
+
+        // let newd  = new Date(year,month,day,hour,minutes,seconds,miliseconds);
+        let newd  = new Date(3060,10,10,10,10,10,10);
+
+        console.log(newd);
+
+        let yr = newd.getFullYear();
+        console.log(yr);
+        let yr1 = newd.getDate();
+        console.log(yr1);
+        // let yr2 = newd.getTime();
+        // console.log(yr2);
+        let yr3 = newd.getHours();
+        console.log(yr3);
+        let yr4 = newd.getMinutes();
+        console.log(yr4);
+
+        newd.setDate(30);
+        console.log(newd);
+
+        setInterval(timere,1000);
+
+        function timere(){
+            timer1.innerHTML = new Date();
+            
+        }
+
+
+        // Date.now is function in which we can get the present miliseconds we can use it to check how much time  a code took to run a code by using it before the code start then after the code is finished
+    </script>
+</body>
+</html>
