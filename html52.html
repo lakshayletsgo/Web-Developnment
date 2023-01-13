@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating in the JavaScript</title>
+</head>
+<body>
+    <div class="container" id="container1">
+        <ul class="nav" id="nav1">
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+        </ul>
+    </div>
+    <script>
+        // let main = document.getElementByClassName('container');
+        let main1 = document.getElementById('container1');
+        console.log(main1);
+        let xyz = document.getElementById('nav1');
+        console.log(xyz);
+
+
+
+
+        // if we multiple classes we can put them with same class but this function selects the first class with that name. We can select anything using it.
+        let uvw = document.querySelector("#nav1>li")
+        let sel = document.querySelector(".container");
+        console.log("First class with id class is " ,sel);
+        console.log("First class with id class is " ,uvw);
+        
+
+        // Isse saare select ho jayege
+        // let bel = document.querySelectorAll(".container");
+
+    </script>
+</body>
+</html>
