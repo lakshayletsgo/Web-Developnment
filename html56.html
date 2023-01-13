@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow function
+    </div>
+    <script>
+        console.log("Arrow Functions");
+        let greet = ()=>{
+            console.log("Good Morning");
+        }
+        // function greet() {
+        //     console.log("Good Morning");
+        // }
+        // setInterval(() => {
+        //     greet();
+        // }, 1000);
+
+        // let sum= (a,b)=>a+b;
+        // let sum= (a,b)=>{
+        //     return a+b;
+        // }
+
+        let half = a =>a/2;
+
+        let obj={
+
+            greeting: "Good Morning",
+            names: ["lakshay","Rohan","Rahul"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting + " ji " + student);
+                });
+            }
+        }
+        // If i had used a  function instead of the (student) wala then it wouldnt have given me the output as this function will point towards the name which is there in the function. This is one of the importance of the arrow functions
+        obj.speak();
+        greet();
+    </script>
+</body>
+</html>
