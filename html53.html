@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<style>
+
+    #btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        border: black 2px solid;
+        padding: 10px 10px;
+        cursor: pointer;
+    }
+    #btn:hover{
+        background-color: red;
+        color: black;
+        border-radius: 20px;
+    }
+</style>
+<body>
+    <!-- Browser Events:
+    click
+    contextmenu
+    mouserover/mouseout
+    mouserdown/mouseup
+    mousemove
+
+    submit 
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+
+    <div class="container">
+        <h1>Heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad minus eveniet velit adipisci doloribus optio at ipsum a quaerat et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum necessitatibus officia labore vitae esse, eius rem, expedita fugit dolor reprehenderit neque dolores ut porro excepturi nisi, magnam et harum! Facere, molestias vel. Aliquam ducimus quae quasi. Repudiandae facilis, inventore vitae fugiat nostrum blanditiis enim ab, error a animi mollitia alias voluptate nobis corporis accusamus iure quod? Eligendi iure molestiae obcaecati veniam harum officia alias expedita culpa. Voluptate explicabo pariatur laborum obcaecati facilis? Possimus eius est, ex iste nostrum tempore nesciunt dolor, repellat provident eligendi dolore officiis consequatur non laborum voluptates?</p>
+    </div>
+
+    <!-- This is a function called onclick in whick u write onclick in the tag then write the function name so that it will run when button is pressed -->
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById("para");
+        para.addEventListener("mouseover",function run(){
+            console.log("Mouse is inside");
+        });
+        para.addEventListener("mouseout",function run(){
+            console.log("Mouse is outside");
+        });
+
+        function toggleHide(){
+            // let para = document.getElementById("para");
+            // let btn = document.getElementById("btn");
+
+            
+            // In the modern browsers we don't need to define a variable if it is already defined as a id 
+            // arey matlab agr id de rkhi hai toh usko idhar define karne ki jarurat nahi
+            if(para.style.display != "none"){
+                para.style.display = "none";
+            }else{
+            para.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
