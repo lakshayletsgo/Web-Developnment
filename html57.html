@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Heading</h1>
+    </div>
+    <script>
+        let m = Math;
+        console.log(m);
+
+        let a = 34.65;
+        let b = 45.67;
+        console.log("The value of a and b is ",a,b);
+        console.log("The rounded value of a and b is ",Math.round(a),Math.round(b));
+
+        console.log("The value of 5.3 to the nearest integer using ceil is ",Math.ceil(5.3));
+        console.log("The value of 5.3 to the nearest integer using floor is ",Math.floor(5.3));
+
+        console.log("The absoulte value of -5.8 is ",Math.abs(-5.8));
+
+
+        console.log("The value of sin(pi) ",Math.sin(Math.PI));
+        console.log("The value of cos(pi) ",Math.cos(Math.PI));
+        console.log("The value of tan(pi) ",Math.tan(Math.PI));
+
+        console.log("Minimum value of 5,10 and 13 is ",Math.min(5,10,13));
+        console.log("Maximum value of 5,10 and 13 is ",Math.max(5,10,13));
+
+
+        let a1 = Math.random();
+        console.log("The random number is ",a1);
+
+        let a2= 1;
+        let b2 = 100;
+        let rand = a2+ (b2-a2)*Math.random();
+        console.log("The random Number between 1 and 100 is ",rand);
+
+
+
+    </script>
+</body>
+</html>
