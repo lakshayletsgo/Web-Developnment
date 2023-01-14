@@ -1,0 +1,66 @@
+// console.log("Hello Lakshay");
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Grid </title>
+      <style>
+          .container{
+              display: grid;
+              grid-gap: 2rem;
+              grid-template-areas: 
+              /* Isse voh poore row ko navbar se bhar denge ek tarah se fr kar dega */
+              'navbar navbar navbar navbar'
+              'section section aside aside'
+              'footer footer footer footer';
+          }
+          .example{
+              border: solid black 2px;
+              background-color: yellow;
+          }
+          #navbar{
+              grid-area: navbar;
+          }
+          #section{
+              grid-area: section;
+          }
+          #aside{
+              grid-area: aside;
+          }
+          footer{
+              grid-area: footer;
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+          <div id="navbar" class="example">
+              Home AboutUs Services
+          </div>
+          <div id="section" class="example" >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam sed explicabo repudiandae ex. Nihil dolor enim laudantium repellat atque. Voluptas quo aperiam placeat in quaerat facilis adipisci dolor a mollitia?
+          </div>
+          <div id="aside" class="example">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium eius minus corporis placeat totam quas ea, temporibus libero, tenetur voluptates fuga itaque ipsam similique excepturi deleniti nesciunt assumenda. Laborum doloremque modi voluptas, provident beatae rem cum perferendis. Nemo laboriosam illo recusandae eum saepe nobis nesciunt quae, eaque maxime quisquam sequi dicta quasi eius corporis tempore id fugiat explicabo praesentium. Quis, fugit. Quibusdam ducimus iusto dicta, doloribus recusandae optio quasi fugit odio dolorum, ullam natus veniam, sit placeat illo dignissimos vero minus animi. Quae perferendis recusandae nostrum, maiores hic tenetur beatae!
+          </div>
+          <footer class="example">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet error ex quae nam sapiente, ut labore sunt placeat tempora distinctio modi neque adipisci quia dolores officia nesciunt maiores sint. Dicta?
+          </footer>
+      </div>
+  </body>
+  </html>`);
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
