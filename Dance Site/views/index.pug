@@ -1,0 +1,65 @@
+doctype html 
+html 
+    head
+        title This is a title   
+        style 
+            include ../static/style.css
+    body 
+        nav#navigation  
+            ul  
+                div#logo
+                    img(src="/static/imgs/logo.jpg", alt="Error")
+                    | LDA 
+                li #[a(href="/") Home]
+                li #[a(href="/") About Us]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/contact") Contact]
+
+        section#introsection  
+            div Welcome to Lakshay Dance Academy    
+            div.small Eat Sleep And Repeat   
+        section#missionSection  
+            h2  Our Mission
+            div.card
+                h3 Best Dance Moves 
+                div.card-box
+                    div.card-img
+                        img(src="/static/imgs/img1.jpg", alt="Error")
+                    div.card-content
+                        p One of the best dance academy you can find
+
+
+            div.card
+                h3 Excellent Technique
+                div.card-box
+                    div.card-img
+                        img(src="/static/imgs/img2.jpg", alt="Error")
+                    div.card-content
+                        p One of the best dance academy you can find 
+
+
+
+            div.card
+                h3 Best Experts
+                div.card-box
+                    div.card-img
+                        img(src="/static/imgs/img3.jpg", alt="Error")
+                    div.card-content
+                        p One of the best dance academy you can find
+
+
+            
+               
+        section#sponserSection  
+            h2  Our Sponsers   
+            div#sponsors
+                img(src="/static/imgs/sponsors1.png", alt="Error", Class='spimage')
+                img(src="/static/imgs/sponsors2.png", alt="Error",Class='spimage')
+                img(src="/static/imgs/sponsors3.png", alt="Error",Class='spimage')
+                img(src="/static/imgs/sponsors4.png", alt="Error",Class='spimage')
+
+        footer#footer 
+            | Copyrights Reserved © By Lakshay 2023   
+        script 
+            include ../static/script.js

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Yanone+Kaffeesatz:wght@600&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    padding: 0px 10px;
+    font-size: 29px;
+}
+
+#logo img{
+    height: 40px;
+    
+}
+#navigation{
+    background-color: #ce3030;
+    /* position: sticky; */
+    padding: 18px 14px;
+}
+#navigation ul {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+#navigation li  {
+    list-style: none;
+    margin-top: 10px;
+}
+#navigation li a {
+    color: white;
+    text-decoration: none;
+    padding: 13px 30px ;
+    /* color: black; */
+    font-weight: bold;
+    font-size: 30px;
+}
+#navigation li a:hover {
+    color: black;
+}
+
+#introsection{
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    color: #c75858;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 65px;
+    justify-content: center;
+    align-items: center;
+    background: center/cover no-repeat url('/static/imgs/picexample.jpg');
+    height: 425px;
+    background-color: red;
+}
+#introsection div.small{
+    font-size: 52px;
+    padding: 5px;
+}
+.card{
+    display: inline-block;
+    height: 210px;
+    margin: 23px 15px;
+    border: solid 2px black;
+    border-radius: 10px;
+    width: 30%;
+}
+.card h3{
+    text-align: center;
+    margin: 12px;
+    padding-top: 12px;
+    font-size: 25px;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 131px;
+    padding: 0 14px;
+    margin: 5px 9px;
+}
+.card-img img{
+    height: inherit;
+}
+
+.card-content{
+    padding: 0px 24px;
+}
+.card-content p{
+    font-size: 15px;
+}
+
+#missionSection{
+    background-color: white;
+    height: 326px; 
+    width: 67%;
+    margin: auto;
+}
+#missionSection h2{
+    text-align: center;
+    padding-top: 12px;
+    font-size: 36px;
+}
+#sponserSection{
+    background-color: rgb(167, 95, 95);
+    height: 250px; 
+}
+#sponserSection h2{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 12px;
+}
+#sponsors{
+    height: 191px;
+    max-width: 1000px;
+    margin: 27px auto;
+}
+.spimage{
+    padding: 10px 15px;
+    height: 80%;
+}
+#footer{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+}
