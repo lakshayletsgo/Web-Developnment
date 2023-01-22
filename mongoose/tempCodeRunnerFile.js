@@ -1,0 +1,2 @@
+ve();
+Example.speak();
