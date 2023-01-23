@@ -75,4 +75,32 @@ body{
     font-size: 30px;
 }
 
-
+.anima{
+    position: relative;
+    animation: Headinganima 15s  0s 10 forwards;
+}
+@keyframes Headinganima {
+    0%{
+        top: 0px;
+        right: -900px;
+    }
+    /* 25%{
+        top: 0px;
+        right: 75px;
+        
+    }
+    50%{
+        top: 0px;
+        right: 150px;
+        
+    }
+    75%{
+        top: 0px;
+        right: 200px;
+        
+    } */
+    100%{
+        top:0px;
+        right: 925px;
+    }
+}
