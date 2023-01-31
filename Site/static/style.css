@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Yanone+Kaffeesatz:wght@600&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    
+    background-image: url("img2.jpg");
+}
+
+
+.navbar{
+    z-index: 100;
+    position: sticky;
+    top: 6px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* border: 2px solid;*/
+    /* background-color: black; */
+    /* background-color: black;
+    background-color: black; */
+    
+}
+.container1{
+    width: 801px;
+    border: 2px solid black;
+    border-radius: 200px;
+    background-color: black;
+    
+}
+
+.container1 ul{
+    display: flex;
+    list-style: none;
+    /* z-index: 100; */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container1 ul li a {
+    text-decoration: none;  
+    /* background-color: black; */
+    color: white;
+    padding: 10px 10px ;
+}
+
+.itemnav{
+    /* background-color: black; */
+    padding: 10px 26px ;
+    margin: 10px 10px;
+    
+}
+.container1 ul li a:hover{
+    background-color: black;
+    border: 1px solid rgb(239, 237, 237);
+    border-radius: 15px;
+    background-color: rgb(246, 236, 236);
+    color: rgb(10, 10, 10);
+}
+
+.container{
+    /* border: 2px solid black ; */
+    width: 1200px;
+    margin: auto;
+    /* background-color: white; */
+    color: black;
+    align-items: center;
+    text-align: center;
+    opacity: 0.8;
+    
+}
+
+
+.container h1{
+    font-size: 60px;
+    margin: 10px 0px;
+    margin-bottom: 50px;
+}
+.container h2{
+    font-size: 35px;
+}
+.sections{
+    margin: 10px 10px ;
+        text-align: left;
+    padding: 10px 10px ;
+}
+
+.sections h2{
+    /* font-size: 5px; */
+    font-size: 30px;
+}
+
+.anima{
+    position: relative;
+    animation: Headinganima 15s  0s 1000 forwards;
+}
+@keyframes Headinganima {
+    0%{
+        top: 0px;
+        right: -900px;
+    }
+    /* 25%{
+        top: 0px;
+        right: 75px;
+        
+    }
+    50%{
+        top: 0px;
+        right: 150px;
+        
+    }*/
+    75%{
+        top: 0px;
+        right: 1075px;
+        
+    } 
+    100%{
+        top:0px;
+        right: inherit;
+    }
+}
+.card-img{
+    height: 131px;
+    padding: 0 14px;
+    margin: 5px 9px;
+}
