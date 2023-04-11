@@ -1,5 +1,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed:ital@1&family=Yanone+Kaffeesatz:wght@600&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
 
   *{
     font-family: 'Playfair Display', serif;
@@ -64,8 +67,8 @@ body{
     margin: 0px;
     margin-top: 10px;
     
-    font-style: italic;
-    font-weight: bold;
+    /* font-style: italic; */
+    font-weight:900;
     
 }
 .right-most{
@@ -120,7 +123,7 @@ body{
 }
 .content-top-box-1{
     color: blue;
-    margin: 5px 0px;
+    margin: 5px -41px;
     height: 197px;
     font-size: 42px;
     font-weight: bold;
@@ -129,14 +132,18 @@ body{
 .content-mid-box-1{
     height: 109px;
     /* margin: 0px 29px; */
-    font-size: 23px;
+    margin: -19px -42px;
+    font-size: 19px;
     font-style: normal;
     font-weight: normal;
 }
+.content-mid-box-1>p{
+    font-family: normal;
+}
 .content-bottom-box-1{
-    margin: 10px 0px;
+    margin: 7px -41px;
     /* border: 2px solid black; */
-    background-color: red;
+    background-color: #ea3838de;
     display: inline-block;
     padding: 10px 30px;
     border-radius: 20px;
@@ -147,3 +154,269 @@ body{
     font-size: 15px;
     margin: 0px 38px;
 }
+.Writing{
+    align-items: center;
+    justify-content: center;
+    margin-left: 713px;
+    font-size: 20px;
+}
+.content-mid{
+    display: flex;
+    padding: 0px 135px;
+
+}
+.img-down{
+    margin: 0px 66px;
+    height: 82px;
+
+}
+.img-lap{
+    margin: 8px 158px;
+    height: 65px;
+    
+}
+.img-share{
+    margin: 7px 80px;
+    height: 61px;
+    
+}
+.img-mess{
+    height: 70px;
+    margin: 4px 112px;
+
+}
+.card1-content1{
+    margin: 0px 45px ;
+    font-size: 20px;
+
+}
+.card1-content2{
+    margin: 0px 20px;
+}
+.card2-content1{
+    margin: -3px 142px;
+    font-size: 20px;
+    
+}
+.card2-content2{
+    margin: 1px 45px;
+    
+}
+.card3-content1{
+    margin: 0px 84px;
+    font-size: 20px;
+    
+}
+.card3-content2{
+    
+    margin: 0px 20px;
+}
+.card4-content1{
+    margin: 0px 60px;
+    font-size: 20px;
+    
+}
+.card4-content2{
+    margin: 0px 20px;   
+}
+.mid-end-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    border: 1px solid rgb(234, 219, 200);
+    border-radius: 20px;
+    /* padding: 20px; */
+}
+.parentClass{
+    padding: 200px;
+    padding-top: 27px;
+    border: none;
+}
+.content-mid-end{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    /* margin: 20px; */
+}
+/* #ageCalculator-img{
+    height: 200px;
+}
+#LandingPage-img{
+} */
+.content-mid-end>img{
+    height: 200px;
+    border-radius: inherit;
+    /* image-orientation: inherit; */
+
+}
+.content-mid-end>div{
+    margin: 15px ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.content-ageCalculator{
+    /* margin: 15px ; */
+    font-size: 30px;
+    /* margin-bottom: 0px; */
+}
+.data-ageCalculator{
+    /* margin-top: 0px; */
+    /* padding-bottom: 0px; */
+    opacity: 0.8;
+    font-size: 1.1rem;
+    /* margin-bottom: 10px; */
+}
+.content-mid-end>img:hover{
+    zoom: 1.2;
+    cursor:pointer;
+}
+.content-mid-end>div{
+    font-family: normal;
+}
+.content-LandingPage{
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+.data-LandingPage{
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    
+}
+.content-resultSummary{
+    font-size: 30px;
+    
+}
+.data-resultSummary{
+    /* margin-bottom: 10px; */
+    font-size: 1.1rem;
+    opacity: 0.8;
+    
+}
+.content-DictionaryImage{
+    font-size: 30px;
+    
+}
+.data-DictonaryImage{
+    opacity: 0.8;
+    font-size: 1.1rem;
+    
+}
+.content-stepForm{
+    font-size: 30px;
+    
+}
+.data-stepForm{
+    opacity: 0.8;
+    font-size: 1.1rem;
+    
+}
+.content-portfolio{
+    font-size: 30px;
+    
+}
+.data-portfolio{
+    opacity: 0.8;
+    font-size: 1.1rem;
+    
+}
+.Latest-challenges>p{
+    font-size: 17px;
+    margin-left: 695px;
+    margin-top: 180px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+.content-mid-bottom::before{
+    background-color: #4343f3;
+    content: "";
+    position: absolute;
+    top: 1042px;
+    /* opacity: 0.67; */
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    width: 83%;
+    height: 41%;
+    margin-left: 134px;
+    border-radius: 10px;
+}
+/* font-size: 30px; */
+
+
+.before-end{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #4343f3;
+    color: white;
+    font-style: normal;
+    margin: 0px 150px;
+    /* width: 70%; */
+    height: 450px;
+    border-radius: 20px;
+}
+.slackLogo-class{
+    background-color: #4343f3;
+    z-index: 2;
+}
+#slackLogo{
+    background-color: #4343f3;
+    height: 105px;
+
+}
+.Banner-slack-class>p{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+font-weight: 900;
+}
+#Banner-slack{
+
+}
+.slack-content-class>p{
+    /* font-style: normal; */
+    font-family: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#slack-content{
+    
+    margin: 22px 93px;
+    font-size: 2rem;
+}
+.End-slack{
+    display: flex;
+
+}
+.input-emailId{
+
+}
+#input-emailId{
+    width: 358px;
+    font-size: 20px;
+    height: 39px;
+    margin-right: 29px;
+}
+.Request-btn-class{
+    
+}
+#Request-btn{
+    height: 41px;
+    color: #1c1c85;
+    background-color: white;
+    width: 150px;
+    border-radius: 20px;
+    border: inherit;
+    /* font-style: italic; */
+    font-weight: bold;
+}
+
